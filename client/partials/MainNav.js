@@ -4,6 +4,6 @@ Template.MainNav.events({
   },
 
   'click .logout': () => {
-    Meteor.logout()
+    AccountsTemplates.logout()
   }
 })
