@@ -1,0 +1,22 @@
+{
+  "name": "blaze-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zee-german/meteor-user-accounts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zee-german/meteor-user-accounts/issues"
+  },
+  "homepage": "https://github.com/zee-german/meteor-user-accounts#readme",
+  "dependencies": {
+    "moment": "^2.13.0"
+  }
+}

@@ -215,3 +215,30 @@ table {
     color: $blue;
     cursor: pointer;
 }
+
+.user-edit {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  padding: 20px;
+  width: 280px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(.68, -0.65, .265, 1.2);
+  @include card(2);
+  .close-edit-mode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.edit-mode .user-edit {
+  opacity: 1;
+}
