@@ -1,6 +1,24 @@
 <template name="Users">
     {{#if isInRole 'admin'}}
       <h1 class="page-title">Users</h1>
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Email</th>
+          <th>First Name</th>
+          <th>Created At</th>
+          <th>Admin</th>
+        </tr>
+      </table>
+      {{#each users}}
+        <tr>
+          <td>{{_id}}</td>
+          <td>{{userEmail}}</td>
+          <td>{{profile.firstName}}</td>
+          <td>{{createdAt}}</td>
+          <td>{{isAdmin}}</td>
+        </tr>
+      {{/each}}
     {{else}}
       <h1>Not Authorized</h1>
     {{/if}}
